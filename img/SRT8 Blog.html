@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:9000/#/posts -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SRT8 Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="http://localhost:9000/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="http://localhost:9000/css/clean-blog.css" rel="stylesheet">
+
+   <!--  Angular Bootstrap Calendar -->
+    <link rel="stylesheet" href="http://localhost:9000/bower_components/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.css">
+
+   
+
+    <!-- Custom Fonts -->
+    <link href="./SRT8 Blog_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./SRT8 Blog_files/css" rel="stylesheet" type="text/css">
+    <link href="./SRT8 Blog_files/css(1)" rel="stylesheet" type="text/css">
+    <link href="./SRT8 Blog_files/css(2)" rel="stylesheet" type="text/css">
+    <link href="./SRT8 Blog_files/css(3)" rel="stylesheet" type="text/css">
+    <link href="./SRT8 Blog_files/css(4)" rel="stylesheet" type="text/css">
+    <link href="./SRT8 Blog_files/css(5)" rel="stylesheet" type="text/css">
+    <link href="./SRT8 Blog_files/css(6)" rel="stylesheet" type="text/css">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+    
+   
+
+<!-- ngRepeat: stylesheet in stylesheets track by $index | orderBy: 'weight' --></head>
+
+<body ng-app="bigprojectApp" class="ng-scope">
+
+  
+   
+
+    <!-- ngView:  --><div ng-view="" class="ng-scope"> <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top ng-scope">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+    
+    <a class="navbar-brand" href="http://localhost:9000/#/">Srt<span style="color:red;">8 </span>news</a>
+ 
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div ng-controller="NavCtrl" class="collapse navbar-collapse ng-scope" id="bs-example-navbar-collapse-1">
+    
+      <form class="navbar-form navbar-left ng-pristine ng-invalid ng-invalid-required" role="search" ng-submit="submitPost()" ng-show"signedin()"="">
+       
+        <div class="form-group">
+         
+          <input type="text" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" placeholder="Title" ng-model="post.title" required="" tabindex="0" aria-required="true" aria-invalid="true">
+        
+        </div>
+       
+        <div class="form-group">
+        
+          <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-valid-required" placeholder="Link" ng-model="post.url" required="" tabindex="0" aria-required="false" aria-invalid="false">
+        
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://localhost:9000/#/">Home</a></li>
+        <li><a href="http://localhost:9000/#/events">Events</a></li>
+           <!-- Adv logout -->
+        <li ng-show="signedIn()" aria-hidden="true" class="ng-hide">
+          <p class="navbar-text ng-binding" style="margin-left: 13px; margin-top: 9px;">Hello !</p>
+        </li>
+        <li ng-show="signedIn()" aria-hidden="true" class="ng-hide">
+          <a ng-href="#/users/" class="ng-binding" href="http://localhost:9000/#/users/">
+          <img class="nav-pic" style="width: 29px;height: 22px;">
+          
+          </a>
+        </li>
+        <!-- Basic login -->
+        <li ng-show="signedIn()" aria-hidden="true" class="ng-hide">
+          <a href="./SRT8 Blog_files/SRT8 Blog.html" ng-click="logout()" tabindex="0">Logout</a>
+        </li>
+         <!-- Basic logout -->
+
+        <li ng-hide="signedIn()" aria-hidden="false">
+          <a href="http://localhost:9000/#/login">Login</a>
+        </li>
+        <li ng-hide="signedIn()" aria-hidden="false">
+          <a href="http://localhost:9000/#/register">Register</a>
+        </li>
+      </ul>
+  </div><!-- /.navbar-collapse -->
+</div></nav>
+
+<!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header ng-scope" style="background-image: url(&#39;http://centralfloridachallengerowners.com/wp-content/uploads/wp-image-slider-with-lightbox/IMG_1122.jpg&#39;)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>SRT<span style="color:red;">8 </span> Blog</h1>
+                        <hr class="small">
+                        <span class="subheading"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <style class="ng-scope">
+      a:hover{
+        text-decoration: none;
+      }
+    </style>
+<!-- Main Content -->
+    <div class="container ng-scope" ng-controller="NavCtrl">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- ngRepeat: post in posts --><div class="post-preview ng-scope" ng-repeat="post in posts">
+                <div class="info">
+                <a ng-href="http://www.cnn.com/2015/04/06/us/ncaa-basketball-championship/" href="http://www.cnn.com/2015/04/06/us/ncaa-basketball-championship/">
+                <span style="font-weight:bold; font-size:25px;" class="ng-binding">duke wins yet again</span></a>
+                <span class="url ng-binding">(www.cnn.com)</span>
+                
+                </div>
+                <div>
+                  <span>submitted by <a ng-href="#/users/simplelogin:18" class="ng-binding" href="http://localhost:9000/#/users/simplelogin:18">greg</a></span>
+                  <span class="ng-binding">Created on </span>
+                  —
+                  <a ng-href="#/posts/-JmOF4YbkzFEFkId8xYT" href="http://localhost:9000/#/posts/-JmOF4YbkzFEFkId8xYT">comments</a>
+                  <a ng-click="deletePost(post)" ng-show="user.uid === post.creatorUID" tabindex="0" aria-hidden="true" class="ng-hide">delete</a>
+                </div>
+                <hr>
+                 </div><!-- end ngRepeat: post in posts --><div class="post-preview ng-scope" ng-repeat="post in posts">
+                <div class="info">
+                <a ng-href="http://nn.com" href="http://nn.com/">
+                <span style="font-weight:bold; font-size:25px;" class="ng-binding">https://www.google.com/images/srpr/logo11w.png</span></a>
+                <span class="url ng-binding">(nn.com)</span>
+                
+                </div>
+                <div>
+                  <span>submitted by <a ng-href="#/users/simplelogin:19" class="ng-binding" href="http://localhost:9000/#/users/simplelogin:19">greg</a></span>
+                  <span class="ng-binding">Created on </span>
+                  —
+                  <a ng-href="#/posts/-JmSdsR3Rh7wNxVOi6l-" href="http://localhost:9000/#/posts/-JmSdsR3Rh7wNxVOi6l-">comments</a>
+                  <a ng-click="deletePost(post)" ng-show="user.uid === post.creatorUID" tabindex="0" aria-hidden="true" class="ng-hide">delete</a>
+                </div>
+                <hr>
+                 </div><!-- end ngRepeat: post in posts --><div class="post-preview ng-scope" ng-repeat="post in posts">
+                <div class="info">
+                <a ng-href="http://nba.com" href="http://nba.com/">
+                <span style="font-weight:bold; font-size:25px;" class="ng-binding">what</span></a>
+                <span class="url ng-binding">(nba.com)</span>
+                
+                </div>
+                <div>
+                  <span>submitted by <a ng-href="#/users/simplelogin:19" class="ng-binding" href="http://localhost:9000/#/users/simplelogin:19">greg</a></span>
+                  <span class="ng-binding">Created on </span>
+                  —
+                  <a ng-href="#/posts/-JmdYUOvjvshKT1OUFbq" href="http://localhost:9000/#/posts/-JmdYUOvjvshKT1OUFbq">comments</a>
+                  <a ng-click="deletePost(post)" ng-show="user.uid === post.creatorUID" tabindex="0" aria-hidden="true" class="ng-hide">delete</a>
+                </div>
+                <hr>
+                 </div><!-- end ngRepeat: post in posts --><div class="post-preview ng-scope" ng-repeat="post in posts">
+                <div class="info">
+                <a ng-href="http://nba.com" href="http://nba.com/">
+                <span style="font-weight:bold; font-size:25px;" class="ng-binding">looks good even for next year</span></a>
+                <span class="url ng-binding">(nba.com)</span>
+                
+                </div>
+                <div>
+                  <span>submitted by <a ng-href="#/users/simplelogin:19" class="ng-binding" href="http://localhost:9000/#/users/simplelogin:19">greg</a></span>
+                  <span class="ng-binding">Created on </span>
+                  —
+                  <a ng-href="#/posts/-JmpZq87MJqSpYv1gRnR" href="http://localhost:9000/#/posts/-JmpZq87MJqSpYv1gRnR">comments</a>
+                  <a ng-click="deletePost(post)" ng-show="user.uid === post.creatorUID" tabindex="0" aria-hidden="true" class="ng-hide">delete</a>
+                </div>
+                <hr>
+                 </div><!-- end ngRepeat: post in posts -->
+                
+                
+             
+    </div>
+</div></div></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="http://localhost:9000/#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:9000/#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:9000/#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright © Your Website 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+   
+
+  
+
+       <!-- build:js(.) scripts/vendor.js -->
+      <!-- bower:js -->
+      <script src="./SRT8 Blog_files/jquery.js"></script>
+      <script src="./SRT8 Blog_files/angular.js"></script>
+      <script src="./SRT8 Blog_files/bootstrap.js"></script>
+      <script src="./SRT8 Blog_files/angular-animate.js"></script>
+      <script src="./SRT8 Blog_files/angular-aria.js"></script>
+      <script src="./SRT8 Blog_files/angular-cookies.js"></script>
+      <script src="./SRT8 Blog_files/angular-messages.js"></script>
+      <script src="./SRT8 Blog_files/angular-resource.js"></script>
+      <script src="./SRT8 Blog_files/angular-route.js"></script>
+      <script src="./SRT8 Blog_files/angular-sanitize.js"></script>
+      <script src="./SRT8 Blog_files/angular-touch.js"></script>
+      <script src="./SRT8 Blog_files/firebase.js"></script>
+      <script src="./SRT8 Blog_files/firebase-simple-login.js"></script>
+      <script src="./SRT8 Blog_files/mockfirebase.js"></script>
+      <script src="./SRT8 Blog_files/angularfire.min.js"></script>
+      <script src="./SRT8 Blog_files/moment.js"></script>
+      <script src="./SRT8 Blog_files/angular-bootstrap-calendar-tpls.js"></script>
+      <!-- endbower -->
+      <!-- endbuild -->
+
+      <!-- build:js({.tmp,app}) scripts/scripts.js -->
+      <script src="./SRT8 Blog_files/app.js"></script>
+      <script src="./SRT8 Blog_files/controllers.js"></script>
+      <script src="./SRT8 Blog_files/services.js"></script>
+      <script src="./SRT8 Blog_files/url.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="./SRT8 Blog_files/bootstrap.min.js"></script>
+
+      <!-- Custom Theme JavaScript -->
+      <script src="./SRT8 Blog_files/clean-blog.min.js"></script>
+      <script src="./SRT8 Blog_files/angular-css.js"></script>
+
+      <script src="./SRT8 Blog_files/myjs.js"></script>
+     <!-- Angular Scroll -->
+      <script src="./SRT8 Blog_files/angular-scroll.js"></script>
+
+      
+
+
+<script>//<![CDATA[
+document.write('<script src="//' + (location.hostname || 'localhost') + ':35729/livereload.js?snipver=1"><\/script>')
+//]]></script><script src="./SRT8 Blog_files/livereload.js"></script>
+
+
+
+</body></html>
